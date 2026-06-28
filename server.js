@@ -18,7 +18,11 @@ const io = new Server(server);
 
 app.use(cors()); 
 app.use(express.json()); 
-app.use(express.static(__dirname));
+
+// ---------------------------------------------------------
+// FORÇANDO O SERVIDOR A LER A PASTA CORRETAMENTE
+// ---------------------------------------------------------
+app.use(express.static(path.join(__dirname)));
 
 // CONEXÃO COM O BANCO
 const db = new sqlite3.Database('./database.sqlite', (err) => {
@@ -90,11 +94,6 @@ app.post('/api/login', (req, res) => {
   });
 });
 
-// Rota principal carrega o site
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
 // ==========================================
 // INTELIGÊNCIA DO CHAT (WEB SOCKETS)
 // ==========================================
@@ -113,7 +112,15 @@ io.on('connection', (socket) => {
 });
 
 // ---------------------------------------------------------
-// LIGANDO O SERVIDOR (Atualizado para server.listen)
+// ROTA CORINGA: QUALQUER LINK VAI PARA O INDEX
+// (Precisa ficar no final de tudo!)
+// ---------------------------------------------------------
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// ---------------------------------------------------------
+// LIGANDO O SERVIDOR
 // ---------------------------------------------------------
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`✅ Servidor Nexora e Chat online na porta ${PORT}!`);
