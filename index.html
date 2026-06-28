@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexora — Inteligência Financeira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#" class="nav-logo">N<span>E</span>XORA</a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#services">Serviços</a></li>
+    <li><a href="#subscription">Assinatura</a></li>
+    <li><a href="#planilhas">Planilhas</a></li>
+    <li><a href="#membros">Área de Membros</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="#contato" class="nav-cta">Falar com Consultor</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" onclick="closeMobile()">Sobre</a>
+  <a href="#services" onclick="closeMobile()">Serviços</a>
+  <a href="#subscription" onclick="closeMobile()">Assinatura</a>
+  <a href="#planilhas" onclick="closeMobile()">Planilhas</a>
+  <a href="#membros" onclick="closeMobile()">Área de Membros</a>
+  <a href="#contato" onclick="closeMobile()">Contato</a>
+</div>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="label">Inteligência Financeira</span>
+    </div>
+    <h1 class="display hero-title">
+      Construa seu<br>
+      <em>futuro</em> com<br>
+      estratégia.
+    </h1>
+    <p class="hero-subtitle">
+      Consultoria financeira de alto nível, tecnologia avançada e estratégias personalizadas para acelerar o crescimento de pessoas e empresas.
+    </p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-primary">Conhecer Serviços</a>
+      <a href="portal.html" class="btn-ghost">
+        ◈ Acessar Portal
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="dashboard">
+      <div class="dash-header">
+        <div class="dash-dots"><span></span><span></span><span></span></div>
+        <span class="dash-title">NEXORA — Painel Financeiro</span>
+        <span style="font-size:0.65rem;color:var(--muted)">● Ao Vivo</span>
+      </div>
+      <div class="dash-body">
+        <div class="dash-metrics">
+          <div class="metric-card">
+            <div class="metric-label">Patrimônio</div>
+            <div class="metric-value">R$847K</div>
+            <div class="metric-change up">↑ +12.4%</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Rendimento</div>
+            <div class="metric-value">R$24.3K</div>
+            <div class="metric-change up">↑ +8.7%</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Economia</div>
+            <div class="metric-value">R$6.2K</div>
+            <div class="metric-change up">↑ +3.1%</div>
+          </div>
+        </div>
+        <div class="dash-chart">
+          <div class="chart-label">Evolução Patrimonial — 2024</div>
+          <div class="chart-bars">
+            <div class="bar"></div><div class="bar"></div><div class="bar gold"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar gold"></div>
+            <div class="bar"></div><div class="bar gold"></div><div class="bar"></div>
+            <div class="bar gold"></div><div class="bar"></div><div class="bar gold"></div>
+          </div>
+        </div>
+        <div class="dash-row">
+          <div class="mini-stat">
+            <div class="mini-icon">◈</div>
+            <div class="mini-text">
+              <div class="mini-lbl">ROI Médio</div>
+              <div class="mini-val">18.4% a.a.</div>
+            </div>
+          </div>
+          <div class="mini-stat">
+            <div class="mini-icon" style="background:rgba(255,255,255,0.12);color:var(--text)">▲</div>
+            <div class="mini-text">
+              <div class="mini-lbl">Crescimento</div>
+              <div class="mini-val">+34.7%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-badge hero-badge-2">
+    <span class="badge-icon">✦</span>
+    <div>
+      <div class="badge-lbl">Clientes Ativos</div>
+      <div class="badge-val">2.400+</div>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num">R$180M+</span>
+      <span class="stat-desc">em patrimônio assessorado</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">2.400+</span>
+      <span class="stat-desc">clientes satisfeitos</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">98%</span>
+      <span class="stat-desc">índice de satisfação</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">7+</span>
+      <span class="stat-desc">anos de mercado</span>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <div class="line-deco">
+          <span class="label">Sobre a Nexora</span>
+        </div>
+        <h2 class="display section-title reveal">
+          Onde estratégia encontra tecnologia financeira.
+        </h2>
+        <p class="section-sub reveal" style="max-width:460px">
+          A Nexora nasceu da convicção de que inteligência financeira deve ser acessível, estratégica e personalizada. Unimos consultoria especializada, tecnologia de ponta e organização financeira para transformar a relação das pessoas e empresas com o dinheiro.
+        </p>
+        <p style="font-size:0.88rem;color:var(--muted);margin-top:1rem;max-width:460px" class="reveal">
+          Não somos um banco. Somos parceiros estratégicos comprometidos com o crescimento real dos nossos clientes — com dados, método e visão de longo prazo.
+        </p>
+        <div class="about-pillars reveal">
+          <div class="pillar">
+            <div class="pillar-icon">◈</div>
+            <div class="pillar-name">Consultoria Estratégica</div>
+            <div class="pillar-desc">Diagnóstico e planejamento personalizados</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">▲</div>
+            <div class="pillar-name">Tecnologia Aplicada</div>
+            <div class="pillar-desc">Área de membros e ferramentas digitais</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">⬡</div>
+            <div class="pillar-name">Organização Financeira</div>
+            <div class="pillar-desc">Controle e clareza sobre suas finanças</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">◉</div>
+            <div class="pillar-name">Crescimento Sustentável</div>
+            <div class="pillar-desc">Metas reais com acompanhamento contínuo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual reveal">
+        <div class="about-card about-card-main">
+          <div class="label" style="margin-bottom:1.2rem">Indicadores de Performance</div>
+          <div class="progress-row">
+            <div class="progress-label"><span>Organização Financeira</span><span>94%</span></div>
+            <div class="progress-bar"><div class="progress-fill gold" style="width:94%"></div></div>
+          </div>
+          <div class="progress-row">
+            <div class="progress-label"><span>Crescimento Patrimonial</span><span>87%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:87%"></div></div>
+          </div>
+          <div class="progress-row">
+            <div class="progress-label"><span>Redução de Custos</span><span>91%</span></div>
+            <div class="progress-bar"><div class="progress-fill gold" style="width:91%"></div></div>
+          </div>
+          <div class="progress-row">
+            <div class="progress-label"><span>Satisfação do Cliente</span><span>98%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:98%"></div></div>
+          </div>
+          <div class="progress-row" style="margin-bottom:0">
+            <div class="progress-label"><span>Metas Atingidas</span><span>89%</span></div>
+            <div class="progress-bar"><div class="progress-fill gold" style="width:89%"></div></div>
+          </div>
+        </div>
+        <div class="about-card about-card-float">
+          <div style="font-size:0.7rem;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Reconhecimento 2024</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;margin-bottom:0.3rem">Top Fintech Consultoria</div>
+          <div style="font-size:0.78rem;color:var(--muted)">Premiados entre as melhores consultorias financeiras digitais do Brasil</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="line-deco">
+        <span class="label">Serviços</span>
+      </div>
+      <h2 class="display section-title reveal">Soluções para cada etapa da sua jornada financeira.</h2>
+      <p class="section-sub reveal">Do planejamento pessoal ao crescimento empresarial, temos a solução certa para você.</p>
+    </div>
+
+    <div class="services-tabs reveal">
+      <button class="tab-btn active" onclick="switchTab('pessoal')">Consultoria Pessoal</button>
+      <button class="tab-btn" onclick="switchTab('empresarial')">Consultoria Empresarial</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-pessoal">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">◈</div>
+          <div class="service-name">Organização Financeira</div>
+          <div class="service-desc">Mapeamos suas receitas, despesas e patrimônio para criar uma visão clara e organizada da sua situação financeira.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">▲</div>
+          <div class="service-name">Planejamento Financeiro</div>
+          <div class="service-desc">Desenvolvemos um plano financeiro personalizado com projeções, cenários e estratégias alinhadas aos seus objetivos de vida.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⬡</div>
+          <div class="service-name">Controle de Gastos</div>
+          <div class="service-desc">Identificamos padrões de consumo, eliminamos desperdícios e implementamos um sistema eficiente de controle financeiro.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">◉</div>
+          <div class="service-name">Definição de Metas</div>
+          <div class="service-desc">Transformamos seus sonhos em metas financeiras concretas, com prazo, método e acompanhamento profissional.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✦</div>
+          <div class="service-name">Acompanhamento Contínuo</div>
+          <div class="service-desc">Monitoramento mensal da sua evolução financeira com relatórios detalhados, ajustes estratégicos e suporte dedicado.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-empresarial">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">◈</div>
+          <div class="service-name">Análise Financeira</div>
+          <div class="service-desc">Diagnóstico completo das finanças empresariais com identificação de gargalos, oportunidades e pontos críticos de melhoria.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">▲</div>
+          <div class="service-name">Fluxo de Caixa</div>
+          <div class="service-desc">Estruturamos e otimizamos o fluxo de caixa da sua empresa, garantindo previsibilidade e saúde financeira operacional.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⬡</div>
+          <div class="service-name">Redução de Custos</div>
+          <div class="service-desc">Análise detalhada da estrutura de custos com estratégias de otimização sem comprometer a qualidade ou a operação.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">◉</div>
+          <div class="service-name">Precificação Estratégica</div>
+          <div class="service-desc">Desenvolvemos modelos de precificação rentáveis e competitivos baseados em análise de custos, margem e mercado.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✦</div>
+          <div class="service-name">Planejamento Estratégico</div>
+          <div class="service-desc">Planejamento financeiro de longo prazo com projeções, planos de crescimento e estratégias para expansão sustentável.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(255,255,255,0.12);color:var(--text)">■</div>
+          <div class="service-name">Organização Financeira</div>
+          <div class="service-desc">Reestruturação completa da gestão financeira empresarial com processos, indicadores e rotinas de controle eficientes.</div>
+          <a href="#contato" class="service-link">Contratar Serviço →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="subscription">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center">
+      <div class="line-deco" style="justify-content:center">
+        <span class="label">Assinatura</span>
+      </div>
+      <h2 class="display section-title reveal">Acesso premium. Resultados consistentes.</h2>
+      <p class="section-sub reveal" style="margin:0 auto">Assine o plano ideal e tenha suporte estratégico contínuo com ferramentas exclusivas e inteligência financeira a seu favor.</p>
+    </div>
+
+    <div style="display:flex;gap:2rem;flex-wrap:wrap;margin-bottom:3rem;justify-content:center" class="reveal">
+      <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.8rem;color:var(--muted)"><span style="color:var(--gold)">✦</span> Acompanhamento mensal</div>
+      <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.8rem;color:var(--muted)"><span style="color:var(--gold)">✦</span> Análises exclusivas</div>
+      <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.8rem;color:var(--muted)"><span style="color:var(--gold)">✦</span> Suporte dedicado</div>
+      <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.8rem;color:var(--muted)"><span style="color:var(--gold)">✦</span> Insights financeiros</div>
+      <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.8rem;color:var(--muted)"><span style="color:var(--gold)">✦</span> Ferramentas avançadas</div>
+    </div>
+
+    <div class="plans-grid reveal">
+      <div class="plan-card">
+        <div class="plan-name">Plano Essencial</div>
+        <div class="plan-price">R$197<span>/mês</span></div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="active">1 sessão de consultoria mensal</li>
+          <li class="active">Relatório financeiro mensal</li>
+          <li class="active">Suporte via WhatsApp</li>
+          <li class="active">1 planilha financeira inclusa</li>
+          <li>Análises de investimentos</li>
+          <li>Consultoria empresarial</li>
+          <li>Acesso à Área Premium</li>
+        </ul>
+        <a href="#contato" class="btn-ghost" style="width:100%;justify-content:center">Assinar Essencial</a>
+      </div>
+
+      <div class="plan-card featured">
+        <div class="plan-badge">Mais Popular</div>
+        <div class="plan-name" style="color:var(--gold)">Plano Premium</div>
+        <div class="plan-price" style="color:var(--gold-light)">R$497<span>/mês</span></div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="active">4 sessões de consultoria mensais</li>
+          <li class="active">Relatórios semanais detalhados</li>
+          <li class="active">Acesso completo à Área de Membros</li>
+          <li class="active">Suporte prioritário 24/7</li>
+          <li class="active">Todas as planilhas incluídas</li>
+          <li class="active">Análise de investimentos</li>
+          <li class="active">Consultoria empresarial</li>
+          <li class="active">Conteúdos e insights exclusivos</li>
+        </ul>
+        <a href="#contato" class="btn-primary" style="width:100%;text-align:center;display:block">Assinar Premium</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planilhas">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="line-deco">
+        <span class="label">Planilhas Financeiras</span>
+      </div>
+      <h2 class="display section-title reveal">Ferramentas que transformam a sua gestão financeira.</h2>
+      <p class="section-sub reveal">Planilhas profissionais desenvolvidas por especialistas para organizar, controlar e planejar suas finanças.</p>
+    </div>
+
+    <div class="sheets-grid reveal">
+      <div class="sheet-card">
+        <div class="sheet-preview"><div class="sheet-emoji">📊</div></div>
+        <div class="sheet-info">
+          <div class="sheet-name">Fluxo de Caixa Profissional</div>
+          <div class="sheet-desc">Controle completo de entradas e saídas com projeções automáticas e indicadores de liquidez.</div>
+          <div class="sheet-footer">
+            <div class="sheet-price">R$47</div>
+            <a href="planilhas/fluxo-de-caixa.html" class="btn-sm">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-card">
+        <div class="sheet-preview" style="background:linear-gradient(135deg,var(--surface),rgba(139,28,49,0.05))"><div class="sheet-emoji">💰</div></div>
+        <div class="sheet-info">
+          <div class="sheet-name">Controle Financeiro Pessoal</div>
+          <div class="sheet-desc">Organize receitas, despesas, metas e investimentos em um painel visual completo e intuitivo.</div>
+          <div class="sheet-footer">
+            <div class="sheet-price">R$37</div>
+            <a href="planilhas/controle-pessoal.html" class="btn-sm">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-card">
+        <div class="sheet-preview"><div class="sheet-emoji">🎯</div></div>
+        <div class="sheet-info">
+          <div class="sheet-name">Planejador de Metas</div>
+          <div class="sheet-desc">Defina, acompanhe e alcance metas financeiras com cronogramas, simulações e progresso visual.</div>
+          <div class="sheet-footer">
+            <div class="sheet-price">R$27</div>
+            <a href="planilhas/planejador-metas.html" class="btn-sm">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-card">
+        <div class="sheet-preview" style="background:linear-gradient(135deg,var(--surface),rgba(255,255,255,0.05))"><div class="sheet-emoji">🏢</div></div>
+        <div class="sheet-info">
+          <div class="sheet-name">Orçamento Empresarial</div>
+          <div class="sheet-desc">Gestão orçamentária completa para empresas com DRE simplificado, margens e análise por centro de custo.</div>
+          <div class="sheet-footer">
+            <div class="sheet-price">R$97</div>
+            <a href="planilhas/orcamento-empresarial.html" class="btn-sm">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-card">
+        <div class="sheet-preview"><div class="sheet-emoji">📈</div></div>
+        <div class="sheet-info">
+          <div class="sheet-name">Organização Financeira Pessoal</div>
+          <div class="sheet-desc">Planilha completa para mapear patrimônio, dívidas, investimentos e construir uma base financeira sólida.</div>
+          <div class="sheet-footer">
+            <div class="sheet-price">R$57</div>
+            <a href="planilhas/organizacao-pessoal.html" class="btn-sm">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-card" style="border-color:rgba(139,28,49,0.3);background:linear-gradient(135deg,var(--card),rgba(139,28,49,0.03))">
+        <div class="sheet-preview" style="background:var(--gold-dim)"><div class="sheet-emoji">⭐</div></div>
+        <div class="sheet-info">
+          <div class="sheet-name">Pack Completo Nexora</div>
+          <div class="sheet-desc" style="color:var(--gold)">Todas as planilhas + atualizações gratuitas por 1 ano + suporte de implementação incluso.</div>
+          <div class="sheet-footer">
+            <div class="sheet-price" style="color:var(--gold-light)">R$197</div>
+            <a href="planilhas/pack-completo.html" class="btn-primary" style="padding:0.4rem 0.9rem;font-size:0.73rem">Adquirir Pack</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="membros">
+  <div class="section-inner">
+    <div class="app-layout">
+      <div>
+        <div class="line-deco">
+          <span class="label">Área de Membros</span>
+        </div>
+        <h2 class="display section-title reveal">Portal exclusivo para o seu crescimento.</h2>
+        <p class="section-sub reveal">O portal de membros Nexora reúne conteúdos premium, ferramentas interativas, masterclasses e todos os seus relatórios em um só lugar seguro.</p>
+
+        <div class="app-features reveal">
+          <div class="app-feature">
+            <div class="af-icon">◈</div>
+            <div class="af-text">
+              <div class="af-name">Masterclasses e Aulas</div>
+              <div class="af-desc">Acesso a treinamentos em vídeo sobre investimentos, organização e estratégias de negócios.</div>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="af-icon">▲</div>
+            <div class="af-text">
+              <div class="af-name">Painel de Relatórios</div>
+              <div class="af-desc">Acompanhe as análises enviadas pelo seu consultor, histórico de evolução e métricas de desempenho.</div>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="af-icon">⬡</div>
+            <div class="af-text">
+              <div class="af-name">Ferramentas Interativas</div>
+              <div class="af-desc">Simuladores de juros compostos, calculadoras de aposentadoria e gestão de fluxo de caixa online.</div>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="af-icon">◉</div>
+            <div class="af-text">
+              <div class="af-name">Suporte Direto</div>
+              <div class="af-desc">Canal de comunicação seguro e prioritário com o seu consultor financeiro.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-versions reveal">
+          <div class="version-card">
+            <div class="v-name">Acesso Base (Clientes)</div>
+            <ul class="v-list">
+              <li>Painel de Relatórios</li>
+              <li>Calculadoras básicas</li>
+              <li>Acesso a materiais em PDF</li>
+              <li>Histórico de consultorias</li>
+            </ul>
+          </div>
+          <div class="version-card premium-v">
+            <div class="v-name" style="color:var(--gold)">Acesso Premium (Assinantes)</div>
+            <ul class="v-list">
+              <li>Acervo completo de Masterclasses</li>
+              <li>Simuladores avançados</li>
+              <li>Download de todas as planilhas</li>
+              <li>Chat prioritário com o consultor</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem" class="reveal">
+          <a href="portal.html" class="btn-primary">Acessar o Portal</a>
+        </div>
+      </div>
+
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;padding:3rem" class="reveal">
+        <div class="glow-ring"></div>
+        <div class="glow-ring glow-ring-2"></div>
+        
+        <div style="width: 100%; max-width: 450px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,0.6);">
+          <div style="background: var(--surface); padding: 12px 15px; display: flex; align-items: center; border-bottom: 1px solid var(--border);">
+            <div style="display:flex; gap:6px;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #FF5F57;"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #FEBC2E;"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #28C840;"></span>
+            </div>
+            <div style="margin: 0 auto; font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Portal Nexora</div>
+          </div>
+          
+          <div style="padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+              <div>
+                <div style="font-size: 0.7rem; color: var(--muted); text-transform: uppercase;">Bem-vindo,</div>
+                <div style="font-size: 1.1rem; font-weight: 500;">Marcos Silva</div>
+              </div>
+              <div style="width: 35px; height: 35px; border-radius: 50%; background: var(--gold); display:flex; align-items:center; justify-content:center; font-weight:bold; font-size: 0.8rem;">MS</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px;">
+              <div style="background: var(--surface); padding: 15px; border-radius: 4px; border: 1px solid var(--border);">
+                <div style="font-size: 0.65rem; color: var(--gold); margin-bottom: 5px;">Módulo Atual</div>
+                <div style="font-size: 0.85rem; font-weight: 500;">Investimentos 101</div>
+                <div style="height: 3px; background: var(--faint); border-radius: 2px; margin-top: 10px; overflow: hidden;">
+                  <div style="height: 100%; width: 65%; background: var(--gold);"></div>
+                </div>
+              </div>
+              <div style="background: var(--surface); padding: 15px; border-radius: 4px; border: 1px solid var(--border);">
+                <div style="font-size: 0.65rem; color: var(--muted); margin-bottom: 5px;">Próxima Sessão</div>
+                <div style="font-size: 0.85rem; font-weight: 500;">14 Out • 10:00</div>
+                <div style="font-size: 0.7rem; color: #4CAF82; margin-top: 5px;">Agendada</div>
+              </div>
+            </div>
+
+            <div style="font-size: 0.8rem; font-weight: 500; margin-bottom: 10px;">Aulas Recentes</div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; gap: 10px; align-items: center; background: var(--surface); padding: 8px; border-radius: 4px; border: 1px solid var(--border);">
+                <div style="width: 40px; height: 30px; background: var(--black); display:flex; align-items:center; justify-content:center; border-radius: 2px; color: var(--gold); font-size: 0.6rem;">▶</div>
+                <div>
+                  <div style="font-size: 0.75rem; font-weight: 500;">Otimização de Custos</div>
+                  <div style="font-size: 0.6rem; color: var(--muted);">12 min</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 10px; align-items: center; background: var(--surface); padding: 8px; border-radius: 4px; border: 1px solid var(--border);">
+                <div style="width: 40px; height: 30px; background: var(--black); display:flex; align-items:center; justify-content:center; border-radius: 2px; color: var(--gold); font-size: 0.6rem;">▶</div>
+                <div>
+                  <div style="font-size: 0.75rem; font-weight: 500;">Reserva de Emergência</div>
+                  <div style="font-size: 0.6rem; color: var(--muted);">18 min</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="diferenciais">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="line-deco">
+        <span class="label">Por que Nexora</span>
+      </div>
+      <h2 class="display section-title reveal">O que nos torna diferentes.</h2>
+    </div>
+
+    <div class="diff-grid reveal">
+      <div class="diff-item">
+        <div class="diff-num">01</div>
+        <div class="diff-title">Tecnologia + Consultoria</div>
+        <div class="diff-desc">Somos a ponte entre a precisão tecnológica e o cuidado humano de uma consultoria especializada. Não entregamos relatórios — entregamos transformação.</div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-num">02</div>
+        <div class="diff-title">Atendimento Estratégico</div>
+        <div class="diff-desc">Cada cliente recebe uma estratégia única, desenvolvida com base em análise de dados reais e objetivos concretos — sem fórmulas genéricas.</div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-num">03</div>
+        <div class="diff-title">Soluções Modernas</div>
+        <div class="diff-desc">Portal exclusivo, planilhas avançadas, dashboards em tempo real e relatórios automatizados. A experiência Nexora é digital, fluída e eficiente.</div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-num">04</div>
+        <div class="diff-title">Organização Inteligente</div>
+        <div class="diff-desc">Criamos sistemas e rotinas financeiras que funcionam de verdade — organizados, simples de manter e poderosos na geração de resultados.</div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-num">05</div>
+        <div class="diff-title">Foco em Crescimento</div>
+        <div class="diff-desc">Nosso sucesso é medido pelo seu crescimento. Cada estratégia, análise e recomendação tem um único objetivo: acelerar seus resultados financeiros.</div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-num">06</div>
+        <div class="diff-title">Experiência Premium</div>
+        <div class="diff-desc">Do primeiro contato ao acompanhamento mensal, cada detalhe é pensado para entregar uma experiência sofisticada, personalizada e de alto valor.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="line-deco">
+        <span class="label">Depoimentos</span>
+      </div>
+      <h2 class="display section-title reveal">O que nossos clientes dizem.</h2>
+    </div>
+
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote-mark">"</div>
+        <div class="testi-text">A Nexora transformou completamente a forma como gerencio as finanças da minha empresa. Em 6 meses organizamos o fluxo de caixa, reduzimos custos e conseguimos crescer com segurança.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">MR</div>
+          <div>
+            <div class="testi-name">Marcos Ramos</div>
+            <div class="testi-role">Sócio-fundador, Empresa de Tecnologia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote-mark">"</div>
+        <div class="testi-text">Nunca pensei que fosse conseguir organizar minhas finanças pessoais. Com a Nexora, em 3 meses já tinha minha reserva de emergência e um plano real para conquistar minha independência financeira.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">AC</div>
+          <div>
+            <div class="testi-name">Ana Carvalho</div>
+            <div class="testi-role">Profissional Liberal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote-mark">"</div>
+        <div class="testi-text">O portal de membros é excelente. Tenho tudo o que preciso acessível, assisto às masterclasses e os relatórios mensais são extremamente completos. Sinto que finalmente tenho controle real.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">LP</div>
+          <div>
+            <div class="testi-name">Lucas Pereira</div>
+            <div class="testi-role">Médico, Assinante Premium</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="line-deco">
+        <span class="label">Dúvidas Frequentes</span>
+      </div>
+      <h2 class="display section-title reveal">Perguntas frequentes.</h2>
+    </div>
+
+    <div class="faq-cols reveal">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Como funciona a consultoria financeira da Nexora?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">A consultoria é personalizada e começa com um diagnóstico completo da sua situação financeira. A partir disso, desenvolvemos um plano estratégico e realizamos sessões regulares de acompanhamento para garantir a execução e os resultados.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Qual a diferença entre a consultoria pessoal e empresarial?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">A consultoria pessoal foca em organização, planejamento e metas individuais. A empresarial foca em análise financeira, fluxo de caixa, precificação, redução de custos e crescimento sustentável do negócio.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Como funciona a assinatura mensal?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">A assinatura garante acesso contínuo a consultorias, área de membros premium, suporte dedicado, relatórios automáticos e todos os recursos exclusivos da plataforma Nexora. Pode ser cancelada a qualquer momento.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">A Área de Membros é segura?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Sim. A plataforma Nexora utiliza criptografia de ponta a ponta e segue os mais altos padrões de segurança digital. Seus dados financeiros e arquivos são protegidos rigorosamente.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">As planilhas funcionam no Excel e Google Sheets?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Sim, todas as planilhas Nexora são compatíveis com Microsoft Excel e Google Sheets. São entregues em formato .xlsx e .gsheet, com instruções completas de uso e suporte para configuração inicial.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Posso cancelar a assinatura a qualquer momento?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Sim, a assinatura Nexora não tem fidelidade. Você pode cancelar a qualquer momento sem multa ou burocracia. Continuará tendo acesso até o final do período já pago.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="line-deco">
+        <span class="label">Contato</span>
+      </div>
+      <h2 class="display section-title reveal">Vamos construir sua estratégia juntos.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p style="color:var(--muted);font-size:0.92rem;max-width:380px;line-height:1.9">
+          Fale com um de nossos especialistas e dê o primeiro passo para transformar sua vida financeira. Atendemos pessoas físicas e empresas.
+        </p>
+
+        <div class="contact-method">
+          <div class="cm-icon">📱</div>
+          <div>
+            <div class="cm-label">WhatsApp</div>
+            <div class="cm-value">(11) 99999-0000</div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="cm-icon">📧</div>
+          <div>
+            <div class="cm-label">E-mail</div>
+            <div class="cm-value">contato@nexora.com.br</div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="cm-icon">📷</div>
+          <div>
+            <div class="cm-label">Instagram</div>
+            <div class="cm-value">@nexorafinancas</div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="cm-icon">📍</div>
+          <div>
+            <div class="cm-label">Localização</div>
+            <div class="cm-value">São Paulo, SP — Brasil<br><span style="color:var(--muted);font-size:0.8rem">Atendimento presencial e online</span></div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5511999990000" class="btn-primary" style="width:fit-content">
+          💬 Falar pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="reveal">
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-input" placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-input" placeholder="seu@email.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Telefone</label>
+              <input type="tel" class="form-input" placeholder="(11) 99999-0000">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Tipo de Interesse</label>
+              <select class="form-input" style="cursor:pointer">
+                <option value="" style="background:var(--card)">Selecione...</option>
+                <option style="background:var(--card)">Consultoria Pessoal</option>
+                <option style="background:var(--card)">Consultoria Empresarial</option>
+                <option style="background:var(--card)">Assinatura</option>
+                <option style="background:var(--card)">Planilhas</option>
+                <option style="background:var(--card)">Área de Membros</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensagem</label>
+            <textarea class="form-textarea" placeholder="Conte um pouco sobre sua situação e objetivos financeiros..."></textarea>
+          </div>
+          <button class="btn-primary" onclick="handleSubmit(event)" style="width:100%;padding:1rem;font-size:0.88rem">
+            Enviar Mensagem
+          </button>
+          <p style="font-size:0.73rem;color:var(--muted);text-align:center">Respondemos em até 24 horas úteis. Sem spam, sem compromisso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="logo">N<span>E</span>XORA</div>
+      <p>Inteligência financeira para pessoas e empresas que buscam crescimento real com estratégia, tecnologia e método.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" title="Instagram">ig</a>
+        <a href="#" class="social-link" title="LinkedIn">in</a>
+        <a href="#" class="social-link" title="WhatsApp">wp</a>
+        <a href="#" class="social-link" title="YouTube">yt</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="#services">Consultoria Pessoal</a></li>
+        <li><a href="#services">Consultoria Empresarial</a></li>
+        <li><a href="#subscription">Assinatura Mensal</a></li>
+        <li><a href="#planilhas">Planilhas</a></li>
+        <li><a href="#membros">Portal do Aluno/Membro</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#about">Sobre a Nexora</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+        <li><a href="#">Termos da Assinatura</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 Nexora Inteligência Financeira. Todos os direitos reservados.</span>
+    <span style="color:var(--faint)">NEXORA · Estratégia · Tecnologia · Crescimento</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

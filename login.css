@@ -1,0 +1,32 @@
+/* ========================================================
+   ESTILOS EXCLUSIVOS DA TELA DE LOGIN / CADASTRO
+======================================================== */
+body.login-page { display: flex; overflow: hidden; height: 100vh; }
+.auth-layout { display: flex; width: 100%; height: 100vh; }
+.auth-visual { flex: 1; background: linear-gradient(135deg, var(--black) 0%, var(--deep) 100%); position: relative; display: flex; flex-direction: column; justify-content: center; padding: 4rem; border-right: 1px solid var(--border); overflow: hidden; }
+.visual-glow { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(139, 28, 49, 0.15) 0%, transparent 60%); top: -20%; left: -20%; border-radius: 50%; pointer-events: none; }
+.visual-glow-2 { top: auto; bottom: -20%; left: auto; right: -20%; background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, transparent 60%); }
+.brand-content { position: relative; z-index: 2; max-width: 500px; }
+.auth-logo { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--text); text-decoration: none; letter-spacing: 0.1em; margin-bottom: 3rem; display: inline-block; }
+.auth-logo span { color: var(--gold); }
+.auth-quote { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; line-height: 1.1; font-weight: 300; margin-bottom: 1.5rem; }
+.auth-quote em { color: var(--gold-light); font-style: italic; }
+.auth-desc { color: var(--muted); font-size: 1rem; line-height: 1.8; max-width: 400px; }
+.auth-form-area { width: 100%; max-width: 600px; background: var(--deep); display: flex; align-items: center; justify-content: center; padding: 2rem; }
+.auth-box { width: 100%; max-width: 420px; }
+.form-header { margin-bottom: 2.5rem; }
+.form-header h2 { font-size: 1.5rem; font-weight: 500; margin-bottom: 0.5rem; }
+.form-header p { color: var(--muted); font-size: 0.9rem; }
+.btn-action { background: linear-gradient(90deg, var(--gold), var(--gold-light)); color: white; border: none; padding: 1.1rem; border-radius: 6px; cursor: pointer; width: 100%; font-size: 0.95rem; font-weight: 600; font-family: 'DM Sans', sans-serif; letter-spacing: 0.05em; margin-top: 1rem; transition: transform 0.3s, box-shadow 0.3s; }
+.btn-action:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(139, 28, 49, 0.3); }
+.toggle-text { text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 2rem; }
+.toggle-link { color: var(--gold-light); cursor: pointer; font-weight: 500; transition: color 0.3s; }
+.toggle-link:hover { color: #fff; }
+.msg-box { padding: 1rem; border-radius: 6px; margin-bottom: 1.5rem; font-size: 0.85rem; display: none; text-align: center; border-left: 3px solid; }
+.msg-error { background: rgba(224, 92, 92, 0.08); border-color: #E05C5C; color: #ff8a8a; }
+.msg-success { background: rgba(76, 175, 130, 0.08); border-color: #4CAF82; color: #4CAF82; }
+.auth-form { animation: slideUp 0.4s ease forwards; }
+.hidden { display: none !important; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 900px) { body.login-page { overflow: auto; height: auto; } .auth-visual { display: none; } .auth-form-area { max-width: 100%; min-height: 100vh;} .mobile-logo { display: block !important; text-align: center; margin-bottom: 2rem;} }
+.mobile-logo { display: none; }

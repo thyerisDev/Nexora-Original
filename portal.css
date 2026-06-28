@@ -1,0 +1,133 @@
+/* ========================================================
+   ESTILOS EXCLUSIVOS DA ÁREA DE MEMBROS (PORTAL)
+======================================================== */
+body { background: var(--deep); overflow-x: hidden; }
+.portal-layout { display: flex; min-height: 100vh; }
+.sidebar { width: 260px; background: var(--black); border-right: 1px solid var(--border); padding: 2rem 1.5rem; display: flex; flex-direction: column; position: fixed; height: 100vh; z-index: 50; transition: transform 0.3s; }
+.sidebar-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--text); text-decoration: none; letter-spacing: 0.08em; margin-bottom: 3rem; display: block; }
+.sidebar-logo span { color: var(--gold); }
+.nav-group { margin-bottom: 2rem; }
+.nav-group-title { font-size: 0.65rem; color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.8rem; padding-left: 0.8rem; }
+.sidebar-menu { list-style: none; display: flex; flex-direction: column; gap: 0.2rem; }
+.sidebar-menu a { display: flex; align-items: center; gap: 0.8rem; padding: 0.8rem; color: var(--muted); text-decoration: none; font-size: 0.85rem; border-radius: 4px; transition: all 0.3s; cursor: pointer; }
+.sidebar-menu a:hover, .sidebar-menu a.active { background: var(--surface); color: var(--text); }
+.sidebar-menu a.active { border-left: 2px solid var(--gold); }
+.menu-icon { color: var(--gold); font-size: 1rem; width: 20px; text-align: center; }
+.main-content { flex: 1; margin-left: 260px; padding: 2rem 4rem; background: var(--deep); min-height: 100vh;}
+.portal-view { display: none; animation: fadeIn 0.4s ease forwards; }
+.portal-view.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.portal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+.greeting h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 400; margin-bottom: 0.2rem; }
+.greeting p { color: var(--muted); font-size: 0.85rem; }
+.user-profile { display: flex; align-items: center; gap: 1rem; }
+.user-avatar { width: 40px; height: 40px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 0.9rem; color: var(--text); }
+.section-title { font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; letter-spacing: 0.05em; border-left: 3px solid var(--gold); padding-left: 10px;}
+.mb-4 { margin-bottom: 3rem; }
+.alerts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.alert-card { background: rgba(139, 28, 49, 0.08); border: 1px solid rgba(139, 28, 49, 0.3); padding: 1.2rem; border-radius: 4px; display: flex; gap: 1rem; align-items: flex-start; }
+.alert-icon { font-size: 1.2rem; }
+.alert-text h4 { font-size: 0.8rem; font-weight: 500; color: var(--text); margin-bottom: 0.3rem; }
+.alert-text p { font-size: 0.75rem; color: #ff8a8a; }
+.panels-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+.panel-card { background: var(--card); border: 1px solid var(--border); padding: 1.5rem; border-radius: 4px; }
+.panel-lbl { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+.panel-val { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--text); line-height: 1.1; margin-bottom: 0.5rem;}
+.panel-sub { font-size: 0.75rem; color: #4CAF82; }
+.tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+.tool-card { background: var(--surface); border: 1px solid var(--border); padding: 1.5rem; border-radius: 4px; text-align: center; cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem; }
+.tool-card:hover { background: var(--card); border-color: var(--gold); transform: translateY(-3px); }
+.tool-icon { font-size: 1.5rem; color: var(--gold); }
+.tool-name { font-size: 0.85rem; color: var(--text); font-weight: 400; }
+.tool-interface { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; max-width: 600px;}
+.form-group { margin-bottom: 1.5rem; }
+.form-label { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.form-input { width: 100%; padding: 0.8rem; background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 4px; font-family: 'DM Sans'; font-size: 1rem; outline: none; }
+.form-input:focus { border-color: var(--gold); }
+.btn-action { background: var(--gold); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 4px; font-family: 'DM Sans'; font-size: 0.9rem; cursor: pointer; transition: 0.3s; width: 100%; font-weight: 500;}
+.btn-action:hover { background: var(--gold-light); }
+.btn-back { background: transparent; border: 1px solid var(--border); color: var(--muted); padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-size: 0.8rem; margin-bottom: 1.5rem; transition: 0.3s;}
+.btn-back:hover { color: var(--text); border-color: var(--muted); }
+.result-box { margin-top: 1.5rem; padding: 1.5rem; background: rgba(76, 175, 130, 0.1); border: 1px solid #4CAF82; border-radius: 4px; display: none; }
+.result-box.error { background: rgba(224, 92, 92, 0.1); border-color: #E05C5C; }
+.result-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.result-value { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; margin-bottom: 0.5rem; }
+@media (max-width: 1024px) { .sidebar { transform: translateX(-100%); } .sidebar.open { transform: translateX(0); } .main-content { margin-left: 0; padding: 2rem; } }
+/* ========================================================
+   ESTILOS PREMIUM DA COMUNIDADE / CHAT
+======================================================== */
+.chat-container {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  height: 600px; display: flex; flex-direction: column; overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.chat-header {
+  padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--border); background: var(--card);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.chat-header-info { display: flex; align-items: center; gap: 1rem; }
+.status-dot { width: 10px; height: 10px; background: #4CAF82; border-radius: 50%; box-shadow: 0 0 10px #4CAF82; }
+.chat-header-info h3 { font-size: 1rem; font-weight: 500; color: var(--text); }
+.chat-header-info p { font-size: 0.75rem; color: var(--muted); }
+
+.chat-messages {
+  flex: 1; padding: 1.5rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1.2rem;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2));
+}
+/* Barra de rolagem estilizada pro chat */
+.chat-messages::-webkit-scrollbar { width: 6px; }
+.chat-messages::-webkit-scrollbar-track { background: transparent; }
+.chat-messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+
+.chat-notice {
+  align-self: center; background: rgba(255,255,255,0.05); padding: 0.5rem 1rem;
+  border-radius: 20px; font-size: 0.75rem; color: var(--muted); margin-bottom: 1rem;
+}
+
+/* Estrutura da Mensagem */
+.msg-wrapper { display: flex; gap: 0.8rem; max-width: 80%; }
+.msg-wrapper.mine { align-self: flex-end; flex-direction: row-reverse; }
+.msg-wrapper.other { align-self: flex-start; }
+
+.msg-avatar {
+  width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; font-weight: 600; color: white; flex-shrink: 0;
+}
+.msg-wrapper.mine .msg-avatar { background: linear-gradient(135deg, var(--gold), var(--gold-light)); }
+.msg-wrapper.other .msg-avatar { background: var(--card); border: 1px solid var(--border); }
+
+.msg-content { display: flex; flex-direction: column; gap: 0.3rem; }
+.msg-wrapper.mine .msg-content { align-items: flex-end; }
+
+.msg-header { display: flex; align-items: baseline; gap: 0.5rem; }
+.msg-name { font-size: 0.8rem; font-weight: 500; color: var(--muted); }
+.msg-time { font-size: 0.65rem; color: rgba(255,255,255,0.3); }
+
+.msg-bubble {
+  padding: 0.8rem 1.2rem; border-radius: 12px; font-size: 0.95rem; line-height: 1.4;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.msg-wrapper.mine .msg-bubble { background: var(--gold); color: white; border-top-right-radius: 2px; }
+.msg-wrapper.other .msg-bubble { background: var(--card); border: 1px solid var(--border); color: var(--text); border-top-left-radius: 2px; }
+
+/* Área de Input */
+.chat-input-area {
+  padding: 1rem 1.5rem; border-top: 1px solid var(--border); background: var(--card);
+  display: flex; gap: 0.8rem; align-items: center;
+}
+.btn-attach {
+  background: transparent; border: none; color: var(--muted); font-size: 1.2rem;
+  cursor: pointer; transition: color 0.3s; padding: 0.5rem;
+}
+.btn-attach:hover { color: var(--gold-light); }
+.chat-input {
+  flex: 1; background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  padding: 0.8rem 1.2rem; border-radius: 20px; outline: none; font-family: 'DM Sans', sans-serif;
+}
+.chat-input:focus { border-color: var(--gold); }
+.chat-send-btn {
+  background: var(--gold); border: none; color: white; width: 45px; height: 45px;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: transform 0.3s, background 0.3s;
+}
+.chat-send-btn:hover { background: var(--gold-light); transform: scale(1.05); }

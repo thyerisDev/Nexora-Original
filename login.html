@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso Exclusivo | Nexora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-page">
+
+  <div class="auth-layout">
+    
+    <div class="auth-visual">
+      <div class="visual-glow"></div>
+      <div class="visual-glow visual-glow-2"></div>
+      
+      <div class="brand-content">
+        <a href="index.html" class="auth-logo">N<span>E</span>XORA</a>
+        <h1 class="auth-quote">Acesse seu<br>potencial <em>financeiro</em>.</h1>
+        <p class="auth-desc">Entre no seu portal exclusivo para acompanhar seus resultados, utilizar ferramentas premium e conectar-se com seu consultor.</p>
+      </div>
+    </div>
+
+    <div class="auth-form-area">
+      <div class="auth-box">
+        
+        <a href="index.html" class="auth-logo mobile-logo">N<span>E</span>XORA</a>
+
+        <div id="mensagem" class="msg-box"></div>
+
+        <div id="formLogin" class="auth-form">
+          <div class="form-header">
+            <h2>Bem-vindo de volta</h2>
+            <p>Insira suas credenciais para acessar sua conta.</p>
+          </div>
+
+          <form onsubmit="fazerLogin(event)">
+            <div class="form-group">
+              <label class="form-label">E-mail de Acesso</label>
+              <input type="email" id="loginEmail" class="form-input" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Senha</label>
+              <input type="password" id="loginSenha" class="form-input" placeholder="••••••••" required>
+            </div>
+            
+            <button type="submit" class="btn-action">Acessar Portal</button>
+            
+            <div class="toggle-text">
+              Ainda não é membro? <span class="toggle-link" onclick="toggleForms()">Solicitar Acesso</span>
+            </div>
+          </form>
+        </div>
+
+        <div id="formCadastro" class="auth-form hidden">
+          <div class="form-header">
+            <h2>Solicitar Acesso</h2>
+            <p>Crie sua conta para iniciar sua jornada financeira.</p>
+          </div>
+
+          <form onsubmit="fazerCadastro(event)">
+            <div class="form-group">
+              <label class="form-label">Nome Completo</label>
+              <input type="text" id="cadNome" class="form-input" placeholder="Ex: Marcos Silva" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">E-mail</label>
+              <input type="email" id="cadEmail" class="form-input" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Crie uma Senha Segura</label>
+              <input type="password" id="cadSenha" class="form-input" placeholder="••••••••" required>
+            </div>
+            
+            <button type="submit" class="btn-action">Criar Minha Conta</button>
+            
+            <div class="toggle-text">
+              Já possui acesso? <span class="toggle-link" onclick="toggleForms()">Fazer Login</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
