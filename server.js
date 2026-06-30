@@ -112,10 +112,11 @@ io.on('connection', (socket) => {
 });
 
 // ---------------------------------------------------------
+// ---------------------------------------------------------
 // ROTA CORINGA: QUALQUER LINK VAI PARA O INDEX
 // (Precisa ficar no final de tudo!)
 // ---------------------------------------------------------
-app.get('*', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
