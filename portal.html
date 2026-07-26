@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal do Membro | Nexora</title>
+<title>Portal do Membro | Nexeris</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -11,10 +11,22 @@
 </head>
 <body>
 
+<div id="maintenance-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--deep); z-index: 99999; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
+  <div style="font-size: 3rem; margin-bottom: 1rem;">🚧</div>
+  <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--text); margin-bottom: 1rem;">
+    Portal em <span style="color: var(--gold);">Manutenção</span>
+  </h1>
+  <p style="color: var(--muted); font-size: 0.95rem; max-width: 450px; line-height: 1.6; margin-bottom: 2rem;">
+    Estamos atualizando nossa área de membros para trazer novas ferramentas e uma experiência ainda melhor. Voltaremos em breve!
+  </p>
+  <a href="index.html" style="background: var(--gold); color: var(--text); padding: 0.8rem 2rem; border-radius: 2px; text-decoration: none; font-size: 0.85rem; font-weight: 500;">
+    ← Voltar para o Site Principal
+  </a>
+</div>
 <div class="portal-layout">
   
   <aside class="sidebar" id="portalSidebar">
-    <a href="index.html" class="sidebar-logo">N<span>E</span>XORA</a>
+    <a href="index.html" class="sidebar-logo">N<span>E</span>XERIS</a>
     
     <div class="nav-group">
       <div class="nav-group-title">Geral</div>
@@ -118,14 +130,14 @@
     <div id="view-comunidade" class="portal-view">
       <section class="mb-4">
         <h2 class="section-title">Comunidade VIP</h2>
-        <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Compartilhe suas metas, tire dúvidas e celebre conquistas com outros membros Nexora.</p>
+        <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Compartilhe suas metas, tire dúvidas e celebre conquistas com outros membros Nexeris.</p>
         
         <div class="chat-container">
           <div class="chat-header">
             <div class="chat-header-info">
               <span class="status-dot"></span>
               <div>
-                <h3>Networking Nexora</h3>
+                <h3>Networking Nexeris</h3>
                 <p>Membros online agora</p>
               </div>
             </div>
@@ -160,7 +172,7 @@
           </div>
           <div class="tool-card" onclick="openTool('tool-score')">
             <div class="tool-icon">🎯</div>
-            <div class="tool-name">Score Nexora</div>
+            <div class="tool-name">Score Nexeris</div>
           </div>
           <div class="tool-card" onclick="openTool('tool-metas')">
             <div class="tool-icon">⛳</div>
@@ -178,22 +190,27 @@
       <section class="mb-4">
         <h2 class="section-title">Seus Documentos e Fluxos</h2>
         <div class="tools-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
-          <div class="tool-card" onclick="window.location.href='planilhas/controle-pessoal.html'" style="flex-direction: row; justify-content: flex-start; text-align: left;">
+          
+          <div class="tool-card" onclick="window.open('COLE_O_LINK_AQUI', '_blank')" style="flex-direction: row; justify-content: flex-start; text-align: left;">
             <div class="tool-icon">📔</div>
             <div class="tool-name">Controle Financeiro</div>
           </div>
-          <div class="tool-card" onclick="window.location.href='planilhas/fluxo-de-caixa.html'" style="flex-direction: row; justify-content: flex-start; text-align: left;">
+          
+          <div class="tool-card" onclick="window.open('COLE_O_LINK_AQUI', '_blank')" style="flex-direction: row; justify-content: flex-start; text-align: left;">
             <div class="tool-icon">👤</div>
             <div class="tool-name">Fluxo de Caixa Pessoal</div>
           </div>
-          <div class="tool-card" onclick="window.location.href='planilhas/orcamento-empresarial.html'" style="flex-direction: row; justify-content: flex-start; text-align: left;">
+          
+          <div class="tool-card" onclick="window.open('COLE_O_LINK_AQUI', '_blank')" style="flex-direction: row; justify-content: flex-start; text-align: left;">
             <div class="tool-icon">🏢</div>
             <div class="tool-name">Fluxo de Caixa Empresarial</div>
           </div>
-          <div class="tool-card" onclick="window.location.href='planilhas/pack-completo.html'" style="flex-direction: row; justify-content: flex-start; text-align: left; border-color: var(--gold);">
+          
+          <div class="tool-card" onclick="window.open('COLE_O_LINK_AQUI', '_blank')" style="flex-direction: row; justify-content: flex-start; text-align: left; border-color: var(--gold);">
             <div class="tool-icon">📂</div>
             <div class="tool-name" style="color: var(--gold);">Central de Documentos</div>
           </div>
+
         </div>
       </section>
     </div>
@@ -228,7 +245,7 @@
       <button class="btn-back" onclick="switchTab('view-ferramentas')">← Voltar para Ferramentas</button>
       <div class="tool-interface">
         <h2 style="font-family: 'Cormorant Garamond'; margin-bottom: 0.5rem; font-size: 2rem;">Posso comprar isso?</h2>
-        <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem;">A inteligência Nexora analisa se uma compra faz sentido no seu momento financeiro atual.</p>
+        <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem;">A inteligência Nexeris analisa se uma compra faz sentido no seu momento financeiro atual.</p>
         <div class="form-group">
           <label class="form-label">Valor da Compra (R$)</label>
           <input type="number" id="dec-valor" class="form-input" placeholder="Ex: 3000">
@@ -256,7 +273,7 @@
     <div id="tool-score" class="portal-view">
       <button class="btn-back" onclick="switchTab('view-ferramentas')">← Voltar para Ferramentas</button>
       <div class="tool-interface">
-        <h2 style="font-family: 'Cormorant Garamond'; margin-bottom: 0.5rem; font-size: 2rem;">Score Nexora</h2>
+        <h2 style="font-family: 'Cormorant Garamond'; margin-bottom: 0.5rem; font-size: 2rem;">Score Nexeris</h2>
         <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem;">Descubra a nota da sua saúde financeira atual (de 0 a 100).</p>
         <div class="form-group">
           <label class="form-label">Renda Mensal Líquida (R$)</label>
